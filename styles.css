@@ -1,95 +1,172 @@
+html {
+  height: 100%;
+}
+
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  h2 {
-    font-size: 30px;
-  }
-  
-  .established {
-    font-style: italic;
-  }
-  
-  h1, h2, p {
-    text-align: center;
-  }
-  
-  .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
-  }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  hr {
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
-  }
-  
-  .bottom-line {
-    margin-top: 25px;
-  }
-  
-  h1, h2 {
-    font-family: Impact, serif;
-  }
-  
-  .item p {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  .flavor, .dessert {
-    text-align: left;
-    width: 75%;
-  }
-  
-  .price {
-    text-align: right;
-    width: 25%;
-  }
-  
-  /* FOOTER */
-  
+  margin: 0%;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+button {
+  font-family: Impact, serif;
+  border: transparent;
+  background-color: transparent;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.menu {
+  background-color: burlywood;
+  padding: 30px;
+  align-self: center;
+  width: 600px;
+  max-width: 70%;
+  inset: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: peru;
+  height: 100px;
+  padding: 0;
+  font-family: Impact, serif;
+}
+
+nav .navimage {
+  width: 40%;
+}
+
+nav a {
+  font-size: 30px;
+  font-family: Impact, serif;
+  text-decoration: none;
+}
+
+nav img {
+  width: 49px;
+  height: 49px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  background-color: peru;
+  height: 5%;
+  align-items: flex-start;
+  margin-top: auto;
+  flex-direction: row;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 415px) {
   footer {
-    font-size: 14px;
+    display: block;
+    flex-direction: column;
   }
-  
-  .address {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: brown;
-  }
-  
-  a:active {
-    color: brown;
-  }
+}
+
+
+footer .title {
+  font-weight: bold;
+}
+
+footer .listItem:hover {
+  color: purple;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}

@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<script>
+    function myFunction() {
+        alert("I am a chef but i dont like cooking!")
+    }
+</script>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Menu</title>
-    <link href="styles.css" rel="stylesheet"/>
-  </head>
-  <body>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div><a href="#">Menu</a></div>
+        <div class="navimage"><img src="https://parspng.com/wp-content/uploads/2022/12/coffeepng.parspng.com-5.png"
+                alt="Coffe Picture"></div>
+
+        <div><button onclick="myFunction()" type="button">DK</button></div>
+    </nav>
     <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <p>
-          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-        </p>
-        <p class="address">123 Free Code Camp Drive</p>
-      </footer>
+        <main>
+            <h1> CAMPER COFFEE</h1>
+            <p class="established">Est. 2020</p>
+            <hr>
+            <section>
+                <h2>Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
+                <article class="item">
+                    <p class="flavor">French Vanilla</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p>
+                    <p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p>
+                    <p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p>
+                    <p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p>
+                    <p class="price">4.50</p>
+                </article>
+            </section>
+            <section>
+                <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
+                <article class="item">
+                    <p class="dessert">Donut</p>
+                    <p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p>
+                    <p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p>
+                    <p class="price">2.50</p>
+                </article>
+            </section>
+        </main>
+        <hr class="bottom-line">
     </div>
-  </body>
+    <footer>
+        <div>
+            <p class="title">Product</p>
+            <p class="listItem">Our Coffee</p>
+            <p class="listItem">Our Desserts</p>
+            <p class="listItem">Delivery</p>
+        </div>
+        <div>
+            <p class="title">Camper Cafe</p>
+            <p class="listItem">About us</p>
+            <p class="listItem">Join our team!</p>
+            <p class="listItem">Contact us</p>
+        </div>
+        <div>
+            <p class="title">Legal</p>
+            <p class="listItem">Allergens</p>
+            <p class="listItem">Privacy Notice</p>
+            <p class="listItem">Sustainability</p>
+            <p class="listItem">Cookie policy</p>
+        </div>
+        <div>
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.484512333789!2d12.601114576545617!3d55.68056369755328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253256f012ff3%3A0xe812f0cada10194c!2sTalent%20Garden%20Copenhagen!5e0!3m2!1sen!2sdk!4v1707270922207!5m2!1sen!2sdk"
+                    width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p class="address">123 Free Code Camp Drive</p>
+        </div>
+
+    </footer>
+</body>
+
 </html>
